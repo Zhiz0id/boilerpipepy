@@ -28,6 +28,8 @@ Kohlschütter et al.
   * Simple run ./url2article.py with url as a parameter
     * It will save article-name.txt with extracted text data
   * Tested with cnn.com, gazeta.ru , lenta.ru, roem.ru
+    * Parsed examples in doc directory
+  * on windows you can view files with browser(utf8 turned on) or nice text editor, Notepad is ugly
 
 ## TODO
   * Unit tests

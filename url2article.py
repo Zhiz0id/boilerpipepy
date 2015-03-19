@@ -12,6 +12,10 @@ import os
 from textwrap import TextWrapper
 
 def main():
+    ugly = False
+    if os.sys.platform[0:3] == 'win':
+        ugly = True
+
     response = urllib2.urlopen(sys.argv[1])
     encoding = response.headers.getparam('charset')
     html = response.read().decode(encoding)
@@ -40,9 +44,11 @@ def main():
     output = []
     for line in a.getText(doc).splitlines():
         output.append(tw.fill(line))
-
+    i = 0
     with codecs.open(filename, 'w', encoding='utf8') as f:
         for line in output:
+            if ugly:
+                line.replace('\n', os.linesep)
             f.write(line)
     print "Article saved. Lines: %s. Filename: %s" % (len(output), filename)
 
