@@ -8,6 +8,7 @@ from StringIO import StringIO
 from lxml import etree, sax
 import sys
 import codecs
+import os
 from textwrap import TextWrapper
 
 def main():
@@ -31,7 +32,7 @@ def main():
 
     tw = TextWrapper()
     tw.width = 80
-    tw.initial_indent = '\n\n'
+    tw.initial_indent = os.linesep + os.linesep
     parsed_url = urllib2.urlparse.urlparse(sys.argv[1])
     filename = parsed_url.netloc + "-" + "".join(
         [c for c in parsed_url.path if c.isalpha() or c.isdigit() or c == ' ']
