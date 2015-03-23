@@ -74,7 +74,7 @@ class BoilerpipeHTMLContentHandler(ContentHandler):
         self.lastEvent = None
 
         self.offsetBlocks = 0
-        self.currentContainedTextElements = []
+        self.currentContainedTextElements = set()
 
         self.flush = False
         self.inAnchorText = False
