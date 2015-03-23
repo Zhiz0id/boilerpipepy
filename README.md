@@ -31,6 +31,9 @@ Kohlschütter et al.
     * Parsed examples in doc directory
   * on windows you can view files with browser(utf8 turned on) or nice text editor, Notepad is ugly
 
+## You can test this library online
+  * [http://boilerpipepy-youra.rhcloud.com/](http://boilerpipepy-youra.rhcloud.com/)
+
 ## TODO
   * Unit tests
   * More filters
@@ -41,4 +44,4 @@ Kohlschütter et al.
     * links
 
 ## Version
-  * 0.001 - 19.03.2014
+  * 0.001 - 23.03.2014
