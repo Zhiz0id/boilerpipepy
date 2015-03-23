@@ -21,8 +21,6 @@ urls = (
 # Redirect to index
 class index:
     def GET(self):
-        print locals()
-        print globals()
         web.header('Content-Type', 'text/html')
         path = u''
         article = u''
@@ -71,7 +69,6 @@ class index:
 
 
 
-        print article
         index = u"""<!DOCTYPE html>
 <html>
     <head>
